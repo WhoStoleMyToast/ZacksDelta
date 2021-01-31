@@ -1,0 +1,5 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home2/whostole//public_html/finance/Zacks
+ - /bin/cp Delta.php $DEPLOYPATH
