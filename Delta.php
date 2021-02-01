@@ -61,30 +61,7 @@ if ($result->num_rows > 0) {
   echo "0 results";
 }
 $conn->close();
-
-
-/*
-
-$con = pg_connect("host=$host dbname=$db user=$user password=$pass")
-    or die("Could not connect to server\n"); 
-
-$query = "SELECT * FROM delta where CURRENT_DATE = end_date"; 
-
-$rs = pg_query($con, $query);
-$error = error_get_last();
-        echo $error['message']. "\n";
-//or die("Cannot execute query: $query\n");
-
-while ($ro = pg_fetch_object($rs)) {
-    echo $ro->start_date . " ";
-    echo $ro->end_date . " ";
-    echo $ro->added . " ";
-    echo $ro->removed . " ";
-    echo "\n";
-}
-
-pg_close($con); 
-*/
+   
 ?>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
